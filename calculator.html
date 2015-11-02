@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+	<title>Calculator</title>
+</head>
+<body>
+	<table cellspacing="10">
+  <tr>
+    <td colspan="5" class="screen" id="calscreen">0</td>
+  </tr>
+  <tr>
+  	<td><a href="javascript:void(0)" onclick="number(7)">7</a></td>
+    <td><a href="javascript:void(0)" onclick="number(8)">8</a></td>
+    <td><a href="javascript:void(0)" onclick="number(9)">9</a></td>
+    <td><a href="javascript:void(0)" onclick="operation('加')">+</a></td>
+    <td rowspan="4"><a href="javascript:void(0)" onclick="zero('c')" class="zero">C</a></td>
+  </tr>
+  <tr>
+    <td><a href="javascript:void(0)" onclick="number(4)">4</a></td>
+    <td><a href="javascript:void(0)" onclick="number(5)">5</a></td>
+    <td><a href="javascript:void(0)" onclick="number(6)">6</a></td>
+    <td><a href="javascript:void(0)" onclick="operation('减')">-</a></td>
+  </tr>
+  <tr>
+    <td><a href="javascript:void(0)" onclick="number(1)">1</a></td>
+    <td><a href="javascript:void(0)" onclick="number(2)">2</a></td>
+    <td><a href="javascript:void(0)" onclick="number(3)">3</a></td>
+    <td><a href="javascript:void(0)" onclick="operation('乘')">*</a></td>
+  </tr>
+  <tr>
+    <td><a href="javascript:void(0)" onclick="number('.')">.</a></td>
+    <td><a href="javascript:void(0)" onclick="number(0)">0</a></td>
+    <td><a href="javascript:void(0)" onclick="result('=')">=</a></td>
+    <td><a href="javascript:void(0)" onclick="operation('除')">/</a></td>
+  </tr>
+</table>
+
+	<script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>
